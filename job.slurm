@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4gb
-#SBATCH --time=3-00:00:00
+#SBATCH --time=0-168:00:00
 
 # Specify a partiton if you want it.
 #    #SBATCH --partition=parallel
@@ -16,7 +16,7 @@
 echo "Working directory: `pwd`."
 
 module load sumo
-module load python/anaconada3-2018.12
+module load python/anaconda3-2018.12
 
 python main.py
 
